@@ -1,0 +1,9 @@
+{
+  "name": "sls-only",
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "third-party-private": "file:../../shared/third-party-private",
+    "moment-wrapper": "file:../../shared/moment-wrapper"
+  }
+}

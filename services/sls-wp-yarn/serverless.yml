@@ -1,0 +1,22 @@
+service:
+  name: sls-wp-yarn
+
+plugins:
+  - serverless-webpack
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+
+custom:
+  webpack:
+    webpackConfig: ./webpack.config.js
+    includeModules: true
+    packager: yarn
+
+package:
+  individually: true
+
+functions:
+  hello:
+    handler: handler.hello
